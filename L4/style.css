@@ -48,16 +48,57 @@ html {background-color:rgb(211, 188, 170)}
 
 #intro1 {
     position: absolute;
-    top: 400px;
-    left:800px ;
+    top: 300px;
+    left:450px ;
 }
 
 #intro2 {
     position: absolute;
-    
+    top: 300px;
+    left:450px ;
 }
 
 #intro3 {
     position: absolute;
-    
+    top: 300px;
+    left:450px ;
+}
+
+#middle1 {
+    position: absolute;
+    top: 300px;
+    left:450px ;
+}
+
+
+#middle2 {
+    position: absolute;
+    top: 300px;
+    left:450px ;
+}
+
+
+#middle3 {
+    position: absolute;
+    top: 300px;
+    left:450px ;
+}
+
+
+#outro1 {
+    position: absolute;
+    top: 300px;
+    left:450px ;
+}
+
+#outro2 {
+    position: absolute;
+    top: 300px;
+    left:450px ;
+}
+
+#outro3 {
+    position: absolute;
+    top: 300px;
+    left:450px ;
 }

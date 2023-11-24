@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#big {
+    background-color: rgb(187, 62, 62);
+    height: 143px;
+    width: 286px;
+    position: relative;
+    left: calc((100% - 286px)/2);
+    top: -20px;
+}
+
+#small {
+    background-color: black;
+    height: 71px;
+    width: 286px;
+    position: relative;
+    left: calc((100% - 286px)/2);
+    top: 40px;
+}
+
+img {
+    height: 430px;
+    width: 430px;
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        height: 640px;
+        width: 640px;
+
+    }
+
+    #big {
+        background-color: rgb(187, 62, 62);
+        height: 250px;
+        width: 640px;
+        position: relative;
+        left: calc((100% - 400px)/2); 
+        top: -600px;
+    }
+
+    #small {
+        background-color: black;
+        height: 140px;
+        width: 640px;
+        position: relative;
+        left: calc((100% - 400px)/2); 
+        top: -500px  ;
+    }
+
+
+
+}

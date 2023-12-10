@@ -12,7 +12,7 @@ function displayPrompt(name) {
     }
 }
 
-
+function startStory() {
     const storyStart = "Du befindest dich in einem dunklen Raum. Es gibt zwei Türen. Welche Tür wählst du? Links oder Rechts?";
     const storyRoom1 = "Du befindest dich in einem Raum mit einem Monster. Was tust du? Kämpfen oder Wegrennen?";
     const storyRoom1Fight = "Du kämpfst gegen das Monster. Du bist tot. Spiel vorbei.";
@@ -46,7 +46,7 @@ function displayPrompt(name) {
     } else {
         alert(WrongInput);
     }
-
+}
 
 // Spiel starten, indem der Name abgefragt wird
 getNameAndDisplayPrompt();

@@ -35,7 +35,7 @@ let Array = [
 
 
 // Spielregeln
-const sayHello = prompt (welcome)
+
 
 const start = prompt(Array[0]);
 if (start == "Left" || start == "left") {

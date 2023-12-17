@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .wellen {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0;
+    
+  }
+  
+  p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-family: Caveat ;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #090C9B;
+    border: none;
+    border-radius: 5px;
+    color: #3066BE;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ffc700;
+  }
+  
+  

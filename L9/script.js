@@ -7,8 +7,8 @@ stories = [
 "Du hast Antwort b. gewählt"
 ]
 
-const input = document.querySelector ("Eingabe")
-const output = document. getElementById ("content")
+const input = document.getElementById ("eingabe")
+const output = document. querySelector (".content")
 
 input.addEventListener("keydown", function (event) { 
     if (event.key == "Enter"){
@@ -20,3 +20,4 @@ input.addEventListener("keydown", function (event) {
     }
 }
 })
+

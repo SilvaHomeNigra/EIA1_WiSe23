@@ -16,7 +16,7 @@ function AnimalContent() {
     haseElement.addEventListener ('click' , function  (rueckseitenTexte [0]))
     haseElement = rueckseitenTexte [0]
     gansElement = rueckseitenTexte [1]
-    fuchsElement = rueckseitenTexte [2]
+    fuchsElement = rueckseitenTexte [2] 
 }
 // Funktion, die auf Klick reagiert
 //haseElement.addEventListener('click', function() {

@@ -1,0 +1,32 @@
+/* Stile für den Body*/
+body {
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    background-color: #9496A6;
+}
+
+/* Stile für die Überschrift (h1) */
+h1 {
+    font-weight: 700;
+    font-size: 208px;
+    color: #F6F0EA;
+}
+
+/* Stile für den Paragraph */
+p {
+    font-size: 80px;
+    color: #F6F0EA;
+}
+
+/* Stile für den Button */
+.startButton {
+    font-size: 80px;
+    color: #F6F0EA;
+    background-color: #5F6280;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung für Links */
+}
+

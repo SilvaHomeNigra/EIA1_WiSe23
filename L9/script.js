@@ -12,9 +12,9 @@ const output = document. querySelector (".content")
 
 input.addEventListener("keydown", function (event) { 
     if (event.key == "Enter"){
-        if (input.valeu == "a") {
+        if (input.value == "a") {
             output.innerHTML = stories [0]
-        if (input.valeu == "b")   {
+        if (input.value == "b")   {
             output.innerHTML = stories [1] 
         }
     }

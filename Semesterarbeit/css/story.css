@@ -29,25 +29,39 @@ p {
     object-fit: contain; /* Passt das Bild in den Container und behält das Seitenverhältnis bei */
     box-sizing: border-box; /* Berücksichtigt die Rahmen- und Padding-Größen im berechneten Wert */
     transition: width 0.3s ease; /* Übergangseffekt für eine sanfte Animation */
+
 }
 
 
 img {
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover; /* Passt das Bild in den Container */
 }
 
  
-#Hase:hover,
-#Gans:hover,
-#Fuchs:hover  {
-    width: 30%; /* Breite bei Hover */
+#haseBild:hover,
+#gansBild:hover,
+#fuchsBild:hover  {
+    width: 110%; /* Breite bei Hover */
   }
   
-
- /* Blendet bild aus um schrift anzuzeigen*/
-.backside-text {
+  
+  #textBoxHase {
+    background-color: #9D3C1F;
+    border-radius: 5%;
     display: none;
   }
-  
+
+  #textBoxGans {
+    background-color: #5F6280;
+    border-radius: 5%;
+    display: none;
+  }
+
+  #textBoxFuchs {
+    background-color: #71673B;
+    border-radius: 5%;
+    display: none;
+  }

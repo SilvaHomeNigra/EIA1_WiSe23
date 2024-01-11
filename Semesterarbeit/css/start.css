@@ -20,6 +20,7 @@ p {
 
 /* Stile für den Button */
 .startButton {
+    font-family: 'Amatic SC', cursive;
     font-size: 80px;
     color: #F6F0EA;
     background-color: #5F6280;

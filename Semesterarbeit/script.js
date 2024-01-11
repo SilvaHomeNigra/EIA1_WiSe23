@@ -1,7 +1,9 @@
+let haseElement = document.getElementById('Hase');
+let gansElement = document.getElementById('Gans');
+let fuchsElement = document.getElementById('Fuchs');
 
-let haseElement = document.getElementById('Hase').innerHTML;
-let gansElement = document.getElementById('Gans').innerHTML;
-let fuchsElement = document.getElementById('Fuchs').innerHTML;
+let bodyElement = document.getElementById('body');
+
 
 // Rückseitentexte für die Tiere
 let rueckseitenTexte = [
@@ -10,27 +12,106 @@ let rueckseitenTexte = [
     "Servus, ich bin Fredi Fuchs. Ich gehe gerne auf Streifzug durch den Wald. Ich bin vor allem in der nacht unterwegs und kann ganz laut bellen. Hast du das Schoneinmal gehört.",
 ];
 
-
-// Funktion AnimalContent - Anzeigen des Textes und abspielen der Audio
-function AnimalContent() {
-    haseElement.addEventListener ('click' , function  (rueckseitenTexte [0]))
-    haseElement = rueckseitenTexte [0]
-    gansElement = rueckseitenTexte [1]
-    fuchsElement = rueckseitenTexte [2] 
+// Funktion Text anzeigen
+function textHase() {
+    let textBox = document.createElement("p");
+    textBox.innerText = rueckseitenTexte[0];
+    textBox.id = "textBoxHase"
+    haseElement.appendChild(textBox) //appendChild = fügt etwas zusätzlich hinzu (in diesem fall TextBox wird Haseelement hinzugefügt)
+   
+    textBox.addEventListener ('click', function(){
+        console.log(document.getElementById("textBoxHase"));
+        document.getElementById("textBoxHase").style.display = "none";
+        document.getElementById("haseBild").style.display = "block";
+    })
 }
-// Funktion, die auf Klick reagiert
-//haseElement.addEventListener('click', function() {
- //    AnimalContent;
-  //});
-  
-  //gansElement.addEventListener('click', function() {
-   // AnimalContent;
- // });
-  
-  //fuchsElement.addEventListener('click', function() {
-   // AnimalContent;
-  //});
 
+function textGans() {
+    let textBox = document.createElement("p");
+    textBox.innerText = rueckseitenTexte[1];
+    textBox.id = "textBoxGans"
+    gansElement.appendChild(textBox) 
+}
+
+function textFuchs() {
+    let textBox = document.createElement("p");
+    textBox.innerText = rueckseitenTexte[2];
+    textBox.id = "textBoxFuchs"
+    fuchsElement.appendChild(textBox) 
+}
+// Funktion textHase wird aufgerufen
+textHase();
+textGans();
+textFuchs ();
+
+
+// Funktion text wird nach Click angezeigt
+
+    haseElement.addEventListener ('click', function() {
+        //lässt andere Tiere wieder erscheinen
+        document.getElementById("textBoxHase").style.display = "block";
+        document.getElementById("textBoxGans").style.display = "none";
+        document.getElementById("textBoxFuchs").style.display = "none";
+        // blendet angeclicktes Tier aus
+        document.getElementById("haseBild").style.display = "none";
+        // blendet Tier wieder ein nachdem anderes angeclickt wird
+        document.getElementById("gansBild").style.display = "block";
+        document.getElementById("fuchsBild").style.display = "block";
+       
+    })
+   
+    gansElement.addEventListener ('click', function() {
+        document.getElementById("textBoxGans").style.display = "block";
+        document.getElementById("textBoxHase").style.display = "none";
+        document.getElementById("textBoxFuchs").style.display = "none";
+
+        document.getElementById("gansBild").style.display = "none";
+        
+        document.getElementById("haseBild").style.display = "block";
+        document.getElementById("fuchsBild").style.display = "block";
+    })
+
+    fuchsElement.addEventListener ('click', function() {
+        document.getElementById("textBoxFuchs").style.display = "block";
+        document.getElementById("textBoxHase").style.display = "none";
+        document.getElementById("textBoxGans").style.display = "none";
+
+        document.getElementById("fuchsBild").style.display = "none";
+        
+        document.getElementById("haseBild").style.display = "block";
+        document.getElementById("gansBild").style.display = "block";
+    })
+
+
+// Seite wird neu geladen wenn in den Hintergrund geclickt wird
+    function reloadIfBackground(event) {
+        // Überprüfen, ob das geklickte Element der Body ist (nicht die Elemente im Body)
+        if (event.target === document.body) {
+          location.reload(); // Seite neu laden, wenn Hintergrund geklickt wird
+        }
+      }
+
+
+//////////////////////////
+
+
+//ESP Integration
+// Fubktion um Audio abzuspielen
+function handleTouch12() {
+    const audio = new Audio('audio/audioHase.mp3');
+    audio.play();
+    }
+
+function handleTouch27() {
+    const audio = new Audio('audio/audioGans.mp3');
+    audio.play(); 
+   
+}
+const audio = new Audio("./");
+function handleTouch33() {
+    const audio = new Audio('audio/audioFuchs.mp3');
+    audio.play();
+}
 
 
 
